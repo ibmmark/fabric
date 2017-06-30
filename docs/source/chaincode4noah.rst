@@ -175,8 +175,8 @@ it will default the instantiation policy and include an empty owner list.
 To install a chaincode, send a `SignedProposal
 <https://github.com/hyperledger/fabric/blob/master/protos/peer/proposal.proto#L104>`_
 to the ``lifecycle system chaincode`` (LSCC) described in the `System Chaincode`_
-section. For example, to install the **sacc** sample chaincode described
-in section :ref:`simple-asset-chaincode`_
+section. For example, to install the **sacc** sample chaincode described here
+in section :ref:`simple-asset-chaincode`
 using the CLI, the command would look like the following:
 
 .. code:: bash
