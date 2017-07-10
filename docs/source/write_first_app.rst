@@ -15,7 +15,7 @@ We’ll go through three principle steps:
   interact with, so we'll download one stripped down to just the components we need
   to run queries and updates: 
   
-.. image:: images/AppConceptsOverview.png
+..image:: images/AppConceptsOverview.png
   
   **2. Learning the parameters of the sample smart contract our app will use.** Our
   smart contract contain various functions that allow us to interact with the ledger
@@ -44,20 +44,20 @@ or Docker issue.
 
 First, remove the containers:
 
-.. code:: bash
+..code:: bash
 
   docker rm -f $(docker ps -aq)
 
 Next, delete the chaincode image:
 
-.. code:: bash
+..code:: bash
 
   docker rmi dev-peer0.org1.example.com-fabcar-1.0
     
 Now that your machine is set up, navigate to a directory where you want the samples 
 to be downloaded to and issue the clone command: 
 
-.. code:: bash
+..code:: bash
 
   git clone https://github.com/hyperledger/fabric-samples.git
   
