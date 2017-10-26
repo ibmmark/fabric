@@ -188,23 +188,27 @@ Examples:
 In Linux
 
 Review the range of ephemeral ports:
+
 .. code:: bash
 
   sysctl net.ipv4.ip_local_port_range
 
 Review the FIN-WAIT-2 timeout:
+
 .. code:: bash
 
   sysctl net.ipv4.tcp_fin_timeout
 
 a. Increase the number of ephemeral ports to increase the number of possible
 socket connections:
+
 .. code:: bash
 
   sudo sysctl -w net.ipv4.ip_local_port_range="20000 60999"
 
 b. Reduce the timeout for sockets to remain in the FIN-WAIT-2 state before
 timing out to 5 seconds.
+
 .. code:: bash
 
   sudo sysctl -w net.ipv4.tcp_fin_timeout="5"
@@ -212,11 +216,13 @@ timing out to 5 seconds.
 MacOS:
 
 Review the range of ephemeral ports:
+
 .. code:: bash
 
   sysctl net.inet.ip.portrange.first net.inet.ip.portrange.last
 
 Review the maximum segment lifetime.
+
 .. code:: bash
 
   sysctl net.inet.tcp.msl
@@ -227,6 +233,7 @@ Review the maximum segment lifetime.
 
 a. Increase the number of ephemeral ports to increase the number of possible
 socket connections:
+
 .. code:: bash
 
   sudo sysctl -w net.inet.ip.portrange.first=20000
@@ -236,6 +243,7 @@ socket connections:
   sudo sysctl -w net.inet.ip.portrange.last=65535
 
 b. Reduce the maximum segment lifetime (in milliseconds)
+
 .. code:: bash
 
   sudo sysctl -w net.inet.tcp.msl=5000
