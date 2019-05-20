@@ -44,20 +44,20 @@ or Docker issue.
 
 First, remove the containers:
 
-..code:: bash
+.. code:: bash
 
   docker rm -f $(docker ps -aq)
 
 Next, delete the chaincode image:
 
-..code:: bash
+.. code:: bash
 
   docker rmi dev-peer0.org1.example.com-fabcar-1.0
     
 Now that your machine is set up, navigate to a directory where you want the samples 
 to be downloaded to and issue the clone command: 
 
-..code:: bash
+.. code:: bash
 
   git clone https://github.com/hyperledger/fabric-samples.git
   
@@ -364,6 +364,8 @@ To see that this transaction has been written, go back to ``query.js``, change t
 function ``queryAllCars``, and delete the arguments. 
 
 In other words, change this:
+
+.. code:: bash
 
   const request = {
         chaincodeId: options.chaincode_id,
